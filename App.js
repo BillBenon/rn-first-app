@@ -21,7 +21,12 @@ export default function App() {
       <FlatList
         key={(item, index) => item.id}
         data={courseGoals}
-        renderItem={(itemData) => <GoalItem title={itemData.item.value} />}
+        renderItem={(itemData) => (
+          <GoalItem
+            onDelete={}
+            title={itemData.item.value}
+          />
+        )}
       ></FlatList>
       <StatusBar style="auto" />
     </View>
