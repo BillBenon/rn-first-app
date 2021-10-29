@@ -15,7 +15,7 @@ export default function App() {
     }
     setCourseGoals((currentGoals) => [
       ...currentGoals,
-      { key: Math.random().toString(), value: goalTitle },
+      { id: Math.random().toString(), value: goalTitle },
     ]);
     setIsAddMode(false);
   };
